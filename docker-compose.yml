@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  database:
+    image: 'postgres:13.1-alpine'
+    ports:
+      - 5432:5432
+    volumes:
+      - ./local-initdb.sql:/docker-entrypoint-initdb.d/local-initdb.sql
+    container_name: users_db
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+
+    
