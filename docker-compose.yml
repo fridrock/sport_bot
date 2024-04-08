@@ -11,5 +11,13 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-
+  cache:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=root
+      - REDIS_PORT=6379
+      - REDIS_DATABASES=16
     
