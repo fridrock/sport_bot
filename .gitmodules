@@ -1,3 +1,6 @@
 [submodule "auth_service"]
 	path = auth_service
 	url = https://github.com/fridrock/auth_service.git
+[submodule "tgsportbot"]
+	path = tgsportbot
+	url = https://github.com/fridrock/tgsportbot.git

@@ -1,0 +1,4 @@
+{
+    "notebook.confirmDeleteRunningCell": true,
+    "explorer.confirmDelete": false
+}
