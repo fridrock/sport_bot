@@ -4,3 +4,6 @@
 [submodule "tgsportbot"]
 	path = tgsportbot
 	url = https://github.com/fridrock/tgsportbot.git
+[submodule "trainingservice"]
+	path = trainingservice
+	url = https://github.com/fridrock/trainingservice.git
