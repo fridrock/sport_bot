@@ -7,7 +7,7 @@ services:
       - 5432:5432
     volumes:
       - ./local-initdb.sql:/docker-entrypoint-initdb.d/local-initdb.sql
-    container_name: users_db
+    container_name: db
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
@@ -20,4 +20,11 @@ services:
       - REDIS_PASSWORD=root
       - REDIS_PORT=6379
       - REDIS_DATABASES=16
-    
+
+  broker:
+    image: rabbitmq:3-management
+    container_name: rabbitmq1
+    hostname: 'rabbitmq'
+    ports:
+      - "5672:5672"
+      - "15672:15672"
